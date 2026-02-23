@@ -1,6 +1,6 @@
 # 🚀 Backend Completo - TCC (FastAPI + MySQL + YOLOv11 + OpenCV)
 
-## 🚗 IPD - Detect Parking Violation
+## 🚗 IPD - Illegal Parking Violation
 
 Este repositório contém o backend completo do projeto desenvolvido em Python utilizando FastAPI, integrado com um serviço de visão computacional responsável pela detecção automática de infrações de estacionamento.
 
@@ -85,9 +85,9 @@ A documentação interativa (Swagger) está disponível em:
 
 ## 🖥️ Frontend do Projeto
 
-O frontend do Detect Parking Violation está disponível no repositório:
+O frontend do Illegal Parking Violation está disponível no repositório:
 
-👉 ```https://github.com/Hitalo-27/TCC-DetectParkingViolation-FrontEnd```
+👉 ```https://github.com/Hitalo-27/TCC-IllegalParkingViolation-FrontEnd```
 
 ## 🎓 TCC - UNIP
 Projeto desenvolvido para fins acadêmicos.
