@@ -4,13 +4,11 @@ from typing import Any, Dict
 import os
 from dotenv import load_dotenv
 
-
-
-API_URL = os.getenv("RADARCONSULTAS_URL") 
+API_URL = os.getenv("PLATEREQ_URL") 
 
 # 🔐 Credenciais (substitua pelos valores reais)
-USERNAME =  os.getenv("RADAR_NAME")
-PASSWORD = os.getenv("RADAR_PASSWORD")
+USERNAME =  os.getenv("PLATEREQ_NAME")
+PASSWORD = os.getenv("PLATEREQ_PASSWORD")
 
 def dadosveiculo(placa: str) -> Dict[str, Any]:
     """
