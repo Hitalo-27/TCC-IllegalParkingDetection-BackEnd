@@ -81,7 +81,7 @@ O script carrega o modelo treinado (`best.pt`) e processa imagens de entrada. A 
 1. Clone o repositório:
  ```bash
  git clone https://github.com/Hitalo-27/TCC-IllegalParkingDetection-BackEnd.git
- cd TCC-IllegalParkingDetection-BackEnd.git
+ cd TCC-IllegalParkingDetection-BackEnd
  ```
 
 2. Crie o banco de dados MySQL com o arquivo `schema.sql`:
