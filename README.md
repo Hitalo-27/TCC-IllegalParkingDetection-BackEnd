@@ -1,10 +1,23 @@
 # 🚀 Backend Completo - TCC (FastAPI + MySQL + YOLOv11 + OpenCV)
 
-## 🚗 IPD - Illegal Parking Violation
+## 🚗 IPD - Illegal Parking Detection
 
 Este repositório contém o backend completo do projeto desenvolvido em Python utilizando FastAPI, integrado com um serviço de visão computacional responsável pela detecção automática de infrações de estacionamento.
 
 O projeto foi desenvolvido como parte do TCC da UNIP e tem como objetivo analisar imagens para identificar veículos e possíveis infrações, como estacionamento proibido ou irregular.
+
+---
+
+## ✨ Principais Funcionalidades
+Detecção e Segmentação (SOTA): Utiliza o modelo YOLOv11-seg para mapear com precisão de pixel veículos, calçadas, faixas de pedestre e sinalizações.
+
+Validação Lógica Proprietária: Algoritmos matemáticos em Python (NumPy/OpenCV) para traduzir o Código de Trânsito Brasileiro (CTB) em regras determinísticas (ex: cálculo de área de contato via IoU).
+
+ALPR e Metadados: Integração com APIs externas para reconhecimento de placas e extração de metadados geográficos/temporais das imagens.
+
+Notificação e Alertas: Envio automatizado de e-mails detalhando a infração registrada.
+
+---
 
 # 📌 Tecnologias Utilizadas
 ## 🖥️ Backend (API)
@@ -21,6 +34,8 @@ O projeto foi desenvolvido como parte do TCC da UNIP e tem como objetivo analisa
 
 - Python-JOSE (autenticação com JWT)
 
+---
+
 ## 🧠 Visão Computacional
 
 - YOLOv11 (Ultralytics) – Detecção e segmentação de carros, placas e zonas proibidas
@@ -28,6 +43,8 @@ O projeto foi desenvolvido como parte do TCC da UNIP e tem como objetivo analisa
 - OpenCV – Manipulação e processamento de imagens
 
 - NumPy – Operações matemáticas de máscaras e cálculos
+
+---
 
 ## 🧠 Como Funciona
 
@@ -57,13 +74,15 @@ O script carrega o modelo treinado (`best.pt`) e processa imagens de entrada. A 
     * resultados/        → processamento de múltiplas imagens
     * resultadoUnico/    → processamento de uma imagem
 
+---
+
 ## ⚙️ Como Rodar Localmente (BACKEND + VISÃO COMPUTACIONAL)
 
 1. Clone o repositório:
-```bash
-git clone <URL_DO_REPOSITORIO>
-cd <NOME_DA_PASTA_CLONADA>
-```
+ ```bash
+ git clone https://github.com/Hitalo-27/TCC-IllegalParkingDetection-BackEnd.git
+ cd TCC-IllegalParkingDetection-BackEnd.git
+ ```
 
 2. Crie o banco de dados MySQL com o arquivo `schema.sql`:
 
@@ -72,10 +91,14 @@ cd <NOME_DA_PASTA_CLONADA>
 pip install -r requirements.txt
 ```
 
-4. Execute a aplicação:
+4. Configure os arquivos .env conforme o arquivo .env.example
+
+5. Execute a aplicação:
 ```bash
 uvicorn app.main:app --reload
 ```
+
+---
 
 ## 📚 Documentação da API
 
@@ -83,11 +106,21 @@ A documentação interativa (Swagger) está disponível em:
 
 👉 ```http://127.0.0.1:8000/docs```
 
+---
+
 ## 🖥️ Frontend do Projeto
 
 O frontend do Illegal Parking Violation está disponível no repositório:
 
 👉 ```https://github.com/Hitalo-27/TCC-IllegalParkingViolation-FrontEnd```
 
-## 🎓 TCC - UNIP
-Projeto desenvolvido para fins acadêmicos.
+---
+
+### 👥 Autores & Direitos Acadêmicos
+Este sistema foi idealizado e desenvolvido como Trabalho de Conclusão de Curso (TCC) do bacharelado em Ciências da Computação pela Universidade Paulista (UNIP).
+
+Desenvolvimento de Software, Modelagem e Documentação: João Victor Crisci, Hitalo Chaves, Bruno Pimentel, Guilherme Abbenante.
+
+Orientação: Prof. Alvaro
+
+Projeto desenvolvido para fins acadêmicos e de pesquisa em Mobilidade Urbana.
