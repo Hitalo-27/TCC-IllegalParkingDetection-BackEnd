@@ -112,7 +112,7 @@ A documentação interativa (Swagger) está disponível em:
 
 O frontend do Illegal Parking Violation está disponível no repositório:
 
-👉 ```https://github.com/Hitalo-27/TCC-IllegalParkingViolation-FrontEnd```
+👉 ```https://github.com/Hitalo-27/TCC-IllegalParkingDetection-FrontEnd```
 
 ---
 
